@@ -1,7 +1,8 @@
 # CurrencyMicroservice
 Currency Conversion Microservice
 
-How to Programmatically REQUEST data:
+**How to Programmatically REQUEST data:**
+
 Data can be requested using the function "send_conversion_request" in the test program 'currencyRequest.py".
 This function can either be imported, or copied over to your main program. A request involves writing to a JSON file that is being monitored by the currencyConversionService.
 An example function call could be:
@@ -20,7 +21,8 @@ currency_request = {"Detect": detect_currency,
                         "Override": override}
 
 
-How to Programmatically RECEIVE data:
+**How to Programmatically RECEIVE data:**
+
 The currencyConversionService reads data from currency_request.json and then writes its response to currency_response.json.
 As this service is running constantly, no function call is required, simply read data from the output at currency_response.json.
 An example response would look like this:
