@@ -52,7 +52,13 @@ The data is in this format:
 - **Error (boolean) / (Returns true if an error occured. Either the detect or target currency could not be found)**
 
 
-![UML Diagram drawio](https://github.com/user-attachments/assets/5a6c17fd-3f44-48e4-98f4-3d9d502f5572)
+**API CALLS**
+The microservice calls a currency conversion API at this website: https://www.exchangerate-api.com/docs/python-currency-api
+Use that link to generate an API key that is used in the code.
+
+![UML Diagram drawio](https://github.com/user-attachments/assets/72bb3a4a-20c6-4cd3-a2db-9d6d4caf8435)
+
+
 
 
 
