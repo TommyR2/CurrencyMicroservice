@@ -56,8 +56,9 @@ The data is in this format:
 The microservice calls a currency conversion API at this website: https://www.exchangerate-api.com/docs/python-currency-api
 Use that link to generate an API key that is used in the code.
 
+![UML_Diagram](https://github.com/user-attachments/assets/63878e3d-77be-4c4d-8435-8a55f40b349b)
 
-[UML Diagram.drawio.pdf](https://github.com/user-attachments/files/16500959/UML.Diagram.drawio.pdf)
+
 
 
 
