@@ -1,14 +1,16 @@
 import json
 import time
 import requests
+import os
+from dotenv import load_dotenv
 
-API_KEY = ''
 
 class CurrencyConverter:
-
     def __init__(self, monitor_path, response_path):
         self.monitor_path = monitor_path
         self.response_path = response_path
+        load_dotenv()
+        self.API_KEY = os.getenv('API_KEY')
 
     def monitor_server(self):
         """Monitor the request file for changes."""
@@ -43,7 +45,7 @@ class CurrencyConverter:
 
             # If the exchange rate needs to be calculated, send a request
             else:
-                url = f'https://v6.exchangerate-api.com/v6/{API_KEY}/latest/{detect_currency}'
+                url = f'https://v6.exchangerate-api.com/v6/{self.API_KEY}/latest/{detect_currency}'
                 response = requests.get(url)
                 data = response.json()
                 exchange_rate = data['conversion_rates'][target_currency]
