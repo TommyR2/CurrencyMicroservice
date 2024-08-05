@@ -54,7 +54,13 @@ The data is in this format:
 
 **API CALLS**
 The microservice calls a currency conversion API at this website: https://www.exchangerate-api.com/docs/python-currency-api
-Use that link to generate an API key that is used in the code.
+Use that link to generate an API key that is used in the code, and be sure to place this API key in a .env file that lives in the same directory as the main service.
+
+**Dependencies**
+dotenv
+```
+pip install python-dotenv
+```
 
 ![UML_Diagram](https://github.com/user-attachments/assets/63878e3d-77be-4c4d-8435-8a55f40b349b)
 
