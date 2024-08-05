@@ -20,11 +20,13 @@ class CurrencyConverter:
                     data = json.load(request_file)
                     if data != {}:
                         self.convert_currency(data)
+                        self.cleanup_request()
 
-                    # Clean up the request JSON
-                    with open(self.monitor_path, 'w') as cleanup_file:
-                        data = {}
-                        json.dump(data, cleanup_file)
+    def cleanup_request(self):
+        # Clean up the request JSON
+        with open(self.monitor_path, 'w') as cleanup_file:
+            data = {}
+            json.dump(data, cleanup_file)
             
 
     def convert_currency(self, request_data):
